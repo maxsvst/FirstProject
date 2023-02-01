@@ -1,15 +1,17 @@
 import React from "react";
-import NavbarLink from "../../atoms/subtitle2/NavbarLink";
+import NavbarLink from "../../atoms/navbarLink/NavbarLink";
+import headerMenu from "../../../icons/main/header/headerMenu.svg"
 
 function MainPageNavbar() {
   return (
-    <div class='h-[64px]'>
-      <div class="float-left bg-[url('/icons/headerLogo.svg')] relative w-[35px] h-[33.06px] mt-[14.97px] mb-[15.97px] ml-[85px]"><i/></div>
-      <ul class="float-right list-none pl-0 mr-[61px] mt-[19.5px] mb-[20.5px]">
-        <NavbarLink href="" title="Main" />
-        <NavbarLink href="" title="About" />
-        <NavbarLink href="" title="Get in touch" />
+    <div className="border-b border-[#E5E7EB] flex justify-between items-center  h-[64px] px-[15px] md:px-[85px]">
+      <div className="bg-[url('/src/icons/main/header/headerLogo.svg')] w-[35px] h-[33px]" />
+      <ul className="hidden sm:flex justify-between list-none w-[242px]">
+        <NavbarLink href="#main" title="Main" />
+        <NavbarLink href="#about" title="About" />
+        <NavbarLink href="#getInTouch" title="Get in touch" />
       </ul>
+      <img src={headerMenu} alt={headerMenu} className="sm:hidden"/>
     </div>
   );
 }

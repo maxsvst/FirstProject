@@ -1,35 +1,30 @@
-/** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: [
-    './src/**/*.{js, jsx}'
-  ],
+  content: ["./src/**/*.{js, jsx}"],
   theme: {
     extend: {
-      margin: {
-        '20.5px': '20.5px',
-        '19.5px': '19.5px',
-        '14.97px': '14.97px',
-        '15.97px': '15.97px',
-        '85px': '85px'
-      },
-      padding: {
-        '33.06px': '33.06px'
-      },
-      height: {
-        '64px': '64px',
-        '33.06px': '33.06px'
-      },
-      width: {
-        '35px': '35px'
-      },
+      // padding: {
+      //   '33.06px': '33.06px',
+      //   '15px': '15px',
+      //   '-85px' : '-85px',
+      //   '85px' : '85px',
+      // },
       fontFamily: {
-        'sans': ['Montserrat'],
-        'serif': ['Montserrat'],
-        'mono': ['Montserrat'],
-        'display': ['Montserrat'],
-        'body': ['Montserrat'],
-      }
+        sans: ["Montserrat"],
+        serif: ["Montserrat"],
+        mono: ["Montserrat"],
+        display: ["Montserrat"],
+        body: ["Montserrat"],
+      },
+      fontSize: {
+        'smaller': ["12px", "18px"],
+        'small': ["14px", "21px"],
+        xs: ["16px", "24px"],
+        xl: ["20px", "30px"],
+        "2xl": ["24px", "36px"],
+        "3xl": ["32px", "48px"],
+        "8xl": ["60px", "90px"],
+      },
     },
   },
   plugins: [],
-}
+};
