@@ -2,12 +2,6 @@ module.exports = {
   content: ["./src/**/*.{js, jsx}"],
   theme: {
     extend: {
-      // padding: {
-      //   '33.06px': '33.06px',
-      //   '15px': '15px',
-      //   '-85px' : '-85px',
-      //   '85px' : '85px',
-      // },
       fontFamily: {
         sans: ["Montserrat"],
         serif: ["Montserrat"],
