@@ -17,13 +17,13 @@ export default function GetInTouchForm() {
   return (
     <div
       id="getInTouch"
-      className="flex justify-center items-center bg-no-repeat bg-cover bg-[url('/src/icons/form/formBackground.jpg')] py-16 sm:py-[70px] mt-[100px] sm:mt-[132px]"
+      className="flex justify-center items-center bg-no-repeat bg-cover bg-[url('/src/icons/form/formBackground.jpg')] py-16 px-[10px] sm:py-[70px] mt-[100px]"
     >
-      <div className="flex justify-center items-center bg-[#FCFBFA] rounded-2xl w-full min-w-[300px] sm:max-w-[792px] md:max-w[764px] py-12 px-[21px] sm:px-8 md:px-12 mx-[10px] sm:mx-10 md:mx-0">
+      <div className="flex justify-center bg-[#FCFBFA] rounded-2xl w-full sm:max-w-[712px] md:max-w-[764px] py-12 sm:px-8 lg:px-12 ">
         <div className="flex flex-col items-start">
           <HeaderText title="Let`s discuss your project" />
           <form onSubmit={handleSubmit()} className="mt-9 sm:mt-12">
-            <div className="sm:flex">
+            <div className="relative sm:flex sm:items-center">
               <div className="flex flex-col">
                 <Input
                   register={register("fullName", {
@@ -31,6 +31,7 @@ export default function GetInTouchForm() {
                   })}
                   title="Your full name "
                   value="Name Surname"
+                  errors={errors}
                   icon={
                     errors.fullName ? (
                       <Error className="fill-[#E02424] stroke-[#E02424]" />
@@ -39,17 +40,19 @@ export default function GetInTouchForm() {
                     )
                   }
                   border={
-                    errors.fullName ? "border-[#E02424]" : "border-[#7E3AF2]"
+                    errors.fullName
+                      ? "focus-within:border-[#E02424] hover:border-[#E02424]"
+                      : "focus-within:border-[#7E3AF2] hover:border-[#7E3AF2]"
                   }
                   marginLeft="sm:mr-6 md:mr-5"
                 />
                 {errors.fullName && (
-                  <span className="font-sans font-semibold text-smaller sm:text-small mb-6 mt-1 sm:mb-0 sm:mt-0 text-[#E02424]">
+                  <span className="sm:absolute sm:bottom-0 font-sans font-semibold text-smaller sm:text-small mt-1 sm:mb-0 sm:mt-0 text-[#E02424]">
                     {errors.fullName.message}
                   </span>
                 )}
               </div>
-              <div className="flex flex-col">
+              <div className="flex flex-col my-6">
                 <Input
                   register={register("email", {
                     required: "Please fill this mandatory field",
@@ -64,26 +67,28 @@ export default function GetInTouchForm() {
                     )
                   }
                   border={
-                    errors.email ? "border-[#E02424]" : "border-[#7E3AF2]"
+                    errors.email
+                      ? "focus-within:border-[#E02424] hover:border-[#E02424]"
+                      : "focus-within:border-[#7E3AF2] hover:border-[#7E3AF2]"
                   }
                 />
                 {errors.email && (
-                  <span className="font-sans font-semibold text-smaller sm:text-small mb-6 mt-1 sm:mb-0 sm:mt-0 text-[#E02424]">
+                  <span className="sm:absolute sm:bottom-0 font-sans font-semibold text-smaller sm:text-small mt-1 sm:mb-0 sm:mt-0 text-[#E02424]">
                     {errors.email.message}
                   </span>
                 )}
               </div>
             </div>
             <div className="mt-4">
-              <div className="flex flex-col items-start">
+              <div className="flex flex-col items-start mb-9 sm:mb-12">
                 <span className="font-sans font-semibold text-xs mb-2">
                   Tell me about your project
                 </span>
                 <textarea
                   type="text"
                   placeholder="Add here a general description of your idea and target aim"
-                  className="h-[122px] w-full max-w-[258px] sm:max-w-[648px] md:max-w-[667px] px-5 pt-[13px] rounded-2xl placeholder:text-[#696969] placeholder:text-small placeholder:font-sans placeholder:font-normal border border-solid border-[#E5E7EB] hover:border-[#7E3AF2] focus:border-[#7E3AF2] focus:outline-none active:text-[#27272A] bg-[#FCFBFA]"
-                ></textarea>
+                  className="h-[122px] w-full max-w-[260px] sm:max-w-[648px] md:max-w-[667px] px-5 pt-[13px] rounded-2xl placeholder:text-[#696969] placeholder:text-small placeholder:font-sans placeholder:font-normal border border-solid border-[#E5E7EB] hover:border-[#7E3AF2] focus:border-[#7E3AF2] focus:outline-none active:text-[#27272A] bg-[#FCFBFA]"
+                />
               </div>
             </div>
             <Button type="Submit" title="Submit" />
