@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/FirstProject/static/css/main.bca8aef1.css",
+    "main.js": "/FirstProject/static/js/main.16dc62eb.js",
+    "static/media/mainPhoto.svg": "/FirstProject/static/media/mainPhoto.f20e4c54958897fa97518852b6a4a022.svg",
+    "static/media/aboutEllipse.svg": "/FirstProject/static/media/aboutEllipse.ce841d8baaed4183b2505d5ad347774b.svg",
+    "static/media/mainBackground.svg": "/FirstProject/static/media/mainBackground.ad4e4d418007dccfb44158fd15c26c93.svg",
+    "static/media/aboutPhoto.png": "/FirstProject/static/media/aboutPhoto.a2f1b015f2c4e6103480.png",
+    "static/media/Montserrat-Bold.woff": "/FirstProject/static/media/Montserrat-Bold.180ba33d8de7dcfe80a0.woff",
+    "static/media/Montserrat-Regular.woff": "/FirstProject/static/media/Montserrat-Regular.3db65dc4b858f0fed4fb.woff",
+    "static/media/Montserrat-SemiBold.woff": "/FirstProject/static/media/Montserrat-SemiBold.197213592de7a2a62e06.woff",
+    "static/media/formBackground.jpg": "/FirstProject/static/media/formBackground.a22c939898d6c4613b65.jpg",
+    "static/media/headerLogo.svg": "/FirstProject/static/media/headerLogo.9dd7e8776fe9cc7a2470da18dc1b80b5.svg",
+    "static/media/Art.svg": "/FirstProject/static/media/Art.60d7dfbd11f4513d322d221b39d0710b.svg",
+    "static/media/Music.svg": "/FirstProject/static/media/Music.de94a08dedbcdaa026dee58537f70df9.svg",
+    "static/media/Photo.svg": "/FirstProject/static/media/Photo.b6fccc36d4052f36082aff095d4082cf.svg",
+    "static/media/headerMenu.svg": "/FirstProject/static/media/headerMenu.7fce09c497191f38e40f1c9ee05b05ac.svg",
+    "static/media/Error.svg": "/FirstProject/static/media/Error.b8b8578d6f63d8907132d0284856abbd.svg",
+    "static/media/Person.svg": "/FirstProject/static/media/Person.767b919901cd9c84626529ae0eebec12.svg",
+    "static/media/mail.svg": "/FirstProject/static/media/mail.5063a34f4090da629219b8850dc01d1a.svg",
+    "static/media/ButtonSend.svg": "/FirstProject/static/media/ButtonSend.731d96c92ce394296bf64f7c2c172b94.svg",
+    "index.html": "/FirstProject/index.html",
+    "main.bca8aef1.css.map": "/FirstProject/static/css/main.bca8aef1.css.map",
+    "main.16dc62eb.js.map": "/FirstProject/static/js/main.16dc62eb.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.bca8aef1.css",
+    "static/js/main.16dc62eb.js"
+  ]
+}
